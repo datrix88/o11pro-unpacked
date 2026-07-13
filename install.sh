@@ -2,9 +2,9 @@
 # install.sh – One-command installer for o11pro-unpacked
 #
 # Usage:
-#   sh -c "$(curl -fsSL https://raw.githubusercontent.com/Ap0dexMe0/o11pro-unpacked/main/install.sh)"
-#   sh -c "$(wget -O-  https://raw.githubusercontent.com/Ap0dexMe0/o11pro-unpacked/main/install.sh)"
-#   sh -c "$(fetch -o - https://raw.githubusercontent.com/Ap0dexMe0/o11pro-unpacked/main/install.sh)"
+#   sh -c "$(curl -fsSL https://raw.githubusercontent.com/datrix88/o11pro-unpacked/main/install.sh)"
+#   sh -c "$(wget -O-  https://raw.githubusercontent.com/datrix88/o11pro-unpacked/main/install.sh)"
+#   sh -c "$(fetch -o - https://raw.githubusercontent.com/datrix88/o11pro-unpacked/main/install.sh)"
 #
 # Environment:
 #   O11PRO_DIR    Install directory (default: /root/o11pro-unpacked, root required)
@@ -21,8 +21,8 @@
 
 set -eu
 
-REPO_URL="https://github.com/Ap0dexMe0/o11pro-unpacked.git"
-REPO_RAW="https://raw.githubusercontent.com/Ap0dexMe0/o11pro-unpacked"
+REPO_URL="https://github.com/datrix88/o11pro-unpacked.git"
+REPO_RAW="https://raw.githubusercontent.com/datrix88/o11pro-unpacked"
 BRANCH="${O11PRO_BRANCH:-main}"
 
 # ─── Parse flags ─────────────────────────────────────────────────────────
