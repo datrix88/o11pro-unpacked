@@ -217,16 +217,3 @@ sep
 echo
 printf "  ${_ok} o11pro installed successfully\n"
 echo
-printf "  Starting o11pro...\n"
-echo
-
-# Verify that the launcher exists and is executable
-if [ ! -f "$INSTALL_DIR/src/RunMe.sh" ]; then
-  fail "RunMe.sh not found in src/ — cannot start."
-fi
-if [ ! -x "$INSTALL_DIR/src/RunMe.sh" ]; then
-  chmod +x "$INSTALL_DIR/src/RunMe.sh"
-fi
-
-cd "$INSTALL_DIR/src"
-exec ./RunMe.sh
